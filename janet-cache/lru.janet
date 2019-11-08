@@ -14,7 +14,8 @@
       (put xs k @{:v v :t (os/time)})
       (if (>= size max-size)
         (put xs (ffirst (sort-by-t (pairs xs))) nil)
-        (put c :size (inc size))))))
+        (put c :size (inc size))))
+    nil))
 
 (defn create [&opt opts]
   @{:size 0
