@@ -3,4 +3,4 @@
  :description "A caching library for Janet")
 
 (declare-source
-  :source ["janet-cache/lru.janet"])
+  :source ["staab.cache"])
