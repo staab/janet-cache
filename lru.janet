@@ -1,6 +1,6 @@
-(def ffirst (comp first first))
+(def- ffirst (comp first first))
 
-(defn sort-by-t [xs]
+(defn- sort-by-t [xs]
   (sorted xs (fn [[_ a] [_ b]] (< (a :t) (b :t)))))
 
 (defn cache-get [c k]
